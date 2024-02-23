@@ -1,0 +1,309 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  font-family: "Segoe UI";
+}
+nav .Container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  font-weight: 600;
+  align-items: baseline;
+}
+nav .Container .Container-right .hamburger {
+  display: none;
+  padding: 3px 10px;
+  text-align: end;
+  font-size: 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+nav .Container .Container-right ul {
+  display: flex;
+  gap: 10px;
+}
+nav .first-places {
+  background-image: url("../img/img.jpg");
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 70px 10px;
+  color: white;
+}
+nav .first-places h1 {
+  font-size: 2.25rem;
+}
+nav .first-places .line {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #f4623a;
+  border-top: 1px solid black;
+}
+nav .first-places button {
+  padding: 20px 40px;
+  border-radius: 30px;
+  border: none;
+  background-color: #f4623a;
+  color: white;
+  margin: 40px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: 0.5s;
+}
+nav .first-places button:hover {
+  background-color: #cf5331;
+}
+
+@media screen and (max-width: 1024px) {
+  nav .Container .Container-right ul {
+    display: none;
+  }
+  nav .Container .Container-right .hamburger {
+    display: block;
+  }
+}
+main {
+  font-family: "Segoe UI";
+}
+main #about {
+  background-color: #f4623a;
+  width: 100%;
+  color: white;
+}
+main #about h2 {
+  font-size: 30px;
+}
+main #about .about-container {
+  text-align: center;
+  padding: 80px;
+}
+main #about .about-container .line {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: white;
+  border-top: 1px solid black;
+}
+main #about .about-container button {
+  padding: 20px 40px;
+  border-radius: 30px;
+  border: none;
+  background-color: white;
+  color: black;
+  margin: 40px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: 0.5s;
+}
+main #about .about-container button:hover {
+  background-color: #d3d4d5;
+}
+main #services {
+  text-align: center;
+  padding: 80px 10px;
+}
+main #services h2 {
+  font-size: 30px;
+  font-weight: 100;
+}
+main #services .line {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #f4623a;
+  border-top: 1px solid black;
+}
+main #services .service-container {
+  padding-top: 80px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto auto;
+}
+main #services .service-container div {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 80px;
+  font-family: "Segoe UI";
+}
+main #services .service-container div i {
+  font-size: 40px;
+  color: #f4623a;
+  padding-bottom: 0.5rem;
+}
+main #portfolio {
+  background-color: rgb(33, 37, 41);
+}
+main #portfolio .pictures {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+main #portfolio .pictures div {
+  position: relative;
+}
+main #portfolio .pictures div img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+main #portfolio .pictures div div {
+  width: 100%;
+  height: 100%;
+  background-color: #f4623a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  transition: 0.4s;
+}
+main #portfolio .pictures div div:hover {
+  opacity: 0.9;
+}
+main #portfolio .download-bootstrapt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 90px;
+  font-size: 25px;
+  font-family: "Segoe UI";
+  color: white;
+}
+main #portfolio .download-bootstrapt h2 {
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 400;
+}
+main #portfolio .download-bootstrapt button {
+  padding: 20px 40px;
+  border-radius: 30px;
+  border: none;
+  background-color: white;
+  color: black;
+  margin: 40px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: 0.5s;
+}
+main #portfolio .download-bootstrapt button:hover {
+  background-color: #d3d4d5;
+}
+main #contact .contact-container {
+  text-align: center;
+  padding: 50px;
+}
+main #contact .contact-container .line {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #f4623a;
+  border-top: 1px solid black;
+}
+main #contact .contact-main form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #contact .contact-main form .input {
+  padding: 1rem;
+  width: 40rem;
+  border-radius: 10px;
+  border: 1px solid;
+  opacity: 0.5;
+}
+main #contact .contact-main form textarea {
+  width: 40rem !important;
+}
+main #contact .contact-main form button {
+  width: 40rem;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: #f78768;
+  color: white;
+}
+main #contact .contact-main form button:hover {
+  background-color: #f65f36;
+}
+main #contact .contact-main .tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  gap: 5px;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  main #services .service-container {
+    grid-template-columns: auto auto;
+  }
+  main #portfolio .pictures {
+    grid-template-columns: auto auto;
+  }
+  main #contact .contact-main form .input {
+    width: 30rem;
+  }
+  main #contact .contact-main form textarea {
+    width: 30rem !important;
+  }
+  main #contact .contact-main form button {
+    width: 30rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  main #services .service-container {
+    grid-template-columns: auto;
+  }
+}
+@media screen and (max-width: 578px) {
+  main #portfolio .pictures {
+    grid-template-columns: auto;
+  }
+  main #contact .contact-main form .input {
+    width: 20rem;
+  }
+  main #contact .contact-main form textarea {
+    width: 20rem !important;
+  }
+  main #contact .contact-main form button {
+    width: 20rem;
+  }
+}
+footer p {
+  text-align: center;
+  background-color: rgb(248, 249, 250);
+  padding: 50px;
+  color: #6c757d !important;
+}
